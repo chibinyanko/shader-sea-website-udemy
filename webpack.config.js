@@ -2,11 +2,11 @@ module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
-    path: `${__dirname}/public`,
+    path: `${__dirname}/build`,
     filename: "bundle.js",
   },
   devServer: {
-    static: "./public",
+    static: "./build",
   },
   resolve: {
     extensions: [".js", ".glsl", "vs", "fs"],
